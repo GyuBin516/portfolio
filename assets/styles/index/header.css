@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+#introduce {
+    border-bottom: 0.0625rem solid #424242;
+    padding-bottom: 2rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#introduce > .profile {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#introduce > .profile > .photo {
+    padding-top: 7rem;
+}
+
+#introduce > .profile > .photo > .profile-images {
+    width: 100%;
+    height: 12rem;
+}
+
+#introduce > .profile > .name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0 0 1rem 0;
+}
+
+#introduce > .profile > .job-title {
+    border-bottom: 0.0625rem solid #757575;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 0 1rem 0;
+}
+
+#introduce > .profile > .contact {
+    padding: 1rem 0;
+    color: #e4e5e6;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#introduce > .profile > .contact > .email {
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 0 1rem;
+}
+
+#introduce > .profile > .contact > .tel {
+    font-size: 1.125rem;
+    font-weight: 400;
+}

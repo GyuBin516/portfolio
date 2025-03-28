@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#title-bar {
+    top: 0;
+    height: 3rem;
+    backdrop-filter: blur(1.25rem);
+    background-color: transparent;
+    color: #ffffff;
+    position: sticky;
+    z-index: 10;
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title-bar > .info {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#title-bar > .info > .profile-icon {
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+
+#title-bar > .info > .title-name {
+    color: #e4e5e6;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+#title-bar > .info > .title-caption {
+    font-size: 1rem;
+    font-weight: 400;
+}
