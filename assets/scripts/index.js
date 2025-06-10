@@ -1,7 +1,7 @@
 document.querySelectorAll('.scroll').forEach(anchor => {
-    anchor.addEventListener('click', function(event) {
+    anchor.addEventListener('click', (event) => {
         event.preventDefault();
-        const targetId = this.getAttribute('href');
+        const targetId = anchor.getAttribute('href');
         const targetElement = document.querySelector(targetId);
 
         if (targetElement) {
