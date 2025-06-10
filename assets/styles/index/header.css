@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #introduce {
-    background-image: url("../assets/images/background.jpg");
+    background-image: url("/assets/images/background.jpg");
     background-size: contain;
     border-bottom: 0.0625rem solid #424242;
     padding-bottom: 2rem;
