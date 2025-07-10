@@ -66,3 +66,12 @@
 #nav > .list > .item > .scroll:active {
     color: #18191b;
 }
+
+#nav > .list > .item.active {
+    background-color: #e7b846;
+    color: #18191b;
+}
+
+#nav > .list > .item.active > .scroll {
+    color: #18191b;
+}
