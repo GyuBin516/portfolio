@@ -36,3 +36,30 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks[currentIndex].parentElement.classList.add("active");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-image");
+    const closeBtn = document.querySelector(".image-modal .close");
+
+    // 모든 .image 클래스 이미지에 클릭 이벤트 추가
+    const images = document.querySelectorAll("img.image");
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        });
+    });
+
+    // 닫기 버튼 클릭 시 모달 닫기
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // 모달 바깥 클릭 시 닫기
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});

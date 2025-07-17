@@ -474,7 +474,6 @@
 
 #main-body > .project-container > .content > .section-content > .item > .list > .title {
     text-align: left;
-    width: 50%;
 
     align-items: flex-start;
     display: flex;
@@ -512,6 +511,7 @@
 }
 
 #main-body > .project-container > .content > .section-content > .item > .list > .name {
+    width: 100%;
     padding-bottom: 1rem;
 
     align-items: flex-start;
@@ -519,6 +519,22 @@
     flex-direction: row;
     gap: 1.5rem;
     justify-content: flex-start;
+}
+
+#main-body > .project-container > .content > .section-content > .item > .list > .name > .png {
+    width: 29.07%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+#main-body > .project-container > .content > .section-content > .item > .list > .name > .png > .image {
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 #main-body > .project-container > .content > .section-content > .item > .list > .name > .caption-wrap {
@@ -535,12 +551,50 @@
     padding-bottom: 0.5rem;
 }
 
+#main-body > .project-container > .content > .section-content > .item > .list > .name > .caption-wrap > .text {
+    color: #757575;
+}
+
 #main-body > .project-container > .content > .section-content > .item > .list > .name > .image {
     width: 20%;
     margin: 0.5rem 0;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
-#main-body > .project-container > .content > .section-content > .item > .list > .name > .caption-wrap > .text {
-    color: #757575;
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.image-modal .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #fff;
+}
+
+.image-modal .close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image-modal.hidden {
+    display: none;
 }
